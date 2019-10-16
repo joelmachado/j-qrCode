@@ -13,7 +13,7 @@
     </feature>
     <name>j-qrCode</name>
     <description>
-        A basic Framework7 template for PhoneGap.
+        Leitor de qr code Framework7 e PhoneGap.
     </description>
     <author email="dev@cordova.apache.org" href="http://cordova.io">
         Apache Cordova Team
@@ -26,8 +26,29 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
+    <gap:plugin name="cordova-plugin-camera" source="npm">
+        <variable name="CAMERA_USAGE_DESCRIPTION" value="{id} camera use" />
+        <variable name="PHOTOLIBRARY_USAGE_DESCRIPTION" value="{id} photo use" />
+    </gap:plugin>
+    <gap:plugin name="cordova-plugin-geolocation" source="npm">
+        <variable name="GEOLOCATION_USAGE_DESCRIPTION" value="{id} Location use." />
+    </gap:plugin>
     <allow-intent href="market:*" />
+    <icon density="ldpi" src="res/icon/android/ldpi.png" />
+    <icon density="mdpi" src="res/icon/android/mdpi.png" />
+    <icon density="hdpi" src="res/icon/android/hdpi.png" />
+    <icon density="xhdpi" src="res/icon/android/xhdpi.png" />
+    <icon density="xxhdpi" src="res/icon/android/xxhdpi.png" />
+    <icon density="xxxhdpi" src="res/icon/android/xxxhdpi.png" />
+    <splash density="port-ldpi" src="res/screen/android/splash-port-ldpi.png" />
+    <splash density="port-mdpi" src="res/screen/android/splash-port-mdpi.png" />
+    <splash density="port-hdpi" src="res/screen/android/splash-port-hdpi.png" />
+    <splash density="port-xhdpi" src="res/screen/android/splash-port-xhdpi.png" />
+    <splash density="port-xxhdpi" src="res/screen/android/splash-port-xxhdpi.png" />
+    <splash density="port-xxxhdpi" src="res/screen/android/splash-port-xxxhdpi.png" />
     <preference name="loglevel" value="DEBUG" />
     <preference name="DisallowOverscroll" value="true" />
     <preference name="android-minSdkVersion" value="14" />
+    <preference name="SplashMaintainAspectRatio" value="true" />
+    <preference name="SplashShowOnlyFirstTime" value="true" />
 </widget>

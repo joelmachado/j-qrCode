@@ -2,7 +2,7 @@
 <widget id="com.joel.jqrcode" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>j-qrCode</name>
     <description>
-        A basic Framework7 template for PhoneGap.
+        Leitor de qr code Framework7 e PhoneGap.
     </description>
     <author email="dev@cordova.apache.org" href="http://cordova.io">
         Apache Cordova Team
@@ -15,5 +15,12 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
+    <gap:plugin name="cordova-plugin-camera" source="npm">
+        <variable name="CAMERA_USAGE_DESCRIPTION" value="{id} camera use" />
+        <variable name="PHOTOLIBRARY_USAGE_DESCRIPTION" value="{id} photo use" />
+    </gap:plugin>
+    <gap:plugin name="cordova-plugin-geolocation" source="npm">
+        <variable name="GEOLOCATION_USAGE_DESCRIPTION" value="{id} Location use." />
+    </gap:plugin>
     <preference name="DisallowOverscroll" value="true" />
 </widget>
